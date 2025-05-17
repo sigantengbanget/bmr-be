@@ -5,8 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-     "build" : "yarn add pg && yarn add sequelize && yarn add sequelize-auto && yarn add pg && yarn add jsonwebtoken && yarn add bcryptjs && yarn add cors && yarn add dotenv && yarn add express"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jalal D. Alkhotami",
   "dependencies": {
