@@ -19,11 +19,8 @@ export const register = async (req, res) => {
       role: role || 'USER',
     })
 
-    const token = generateToken(user)
-
     res.status(201).json({
       message: 'Succes register user',
-      token,
       user: {
         id: user.id,
         email: user.email,

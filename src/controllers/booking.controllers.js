@@ -26,7 +26,7 @@ export const createBooking = async (req, res) => {
 
         res.json(booking)
     } catch (err) {
-        console.error(err)
+        console.log({err})
         res.status(500).json({ message: 'Internal server error' })
     }
 }
