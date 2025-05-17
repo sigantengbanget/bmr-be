@@ -12,5 +12,9 @@ export const RoomFactory = (sequelize) => {
       unique: true,
       allowNull: false,
     },
+    capacity : {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    }
   })
 }
