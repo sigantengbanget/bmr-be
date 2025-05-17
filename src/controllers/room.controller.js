@@ -8,8 +8,8 @@ export const createRoom = async (req, res) => {
       return res.status(403).json({ msg: 'Only admin can create room' })
     }
 
-    const { name } = req.body
-    const room = await Room.create({ name })
+    const { name, capacity } = req.body
+    const room = await Room.create({ name, capacity })
     res.status(201).json({ msg: 'Success create room', data: room })
   } catch (error) {
     console.log({ error })
@@ -35,7 +35,7 @@ export const updateRoom = async (req, res) => {
     }
 
     const { id } = req.params
-    const { name } = req.body
+    const { name, capacity } = req.body
 
     const room = await Room.findByPk(id)
     if (!room) {
@@ -43,6 +43,7 @@ export const updateRoom = async (req, res) => {
     }
 
     room.name = name
+    room.capacity = capacity
     await room.save()
 
     res.status(200).json({ msg: 'Success update room', data: room })
