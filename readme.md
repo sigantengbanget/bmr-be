@@ -67,7 +67,7 @@ Authorization: Bearer <your_token>
 
 🏗️ Architecture Overview
 
-Models: Define data schema using Mongoose.
+Models: Define data schema using Sequelize and PostgreSQL.
 
 Controllers: Handle business logic and request processing.
 
