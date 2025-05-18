@@ -8,24 +8,12 @@ An API service for managing meeting room bookings, built with **Express.js**, **
 
 - **Node.js**
 - **Express.js**
-- **TypeScript**
-- **MongoDB** with Mongoose
+- **PostgreSQL**
 - **JWT Authentication**
-- **express-validator**
 - **CORS**
 - **dotenv**
 
 ---
-
-## 📂 Project Structure
-
-src/
-├── controllers/ # API controllers
-├── middlewares/ # Custom middlewares (auth, validation)
-├── models/ # DB models using sequelize and PotsgreSQL (User, Room, Booking)
-├── routes/ # Route definitions
-├── utils/ # Utility functions (token generation, etc)
-index.js/ # Entry point
 
 ## 🚀 Getting Started
 
