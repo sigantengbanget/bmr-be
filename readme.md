@@ -67,6 +67,10 @@ npm run dev
 yarn dev
 ```
 
+## Database Schema
+
+![Database Schema](src/images/db-schema.png)
+
 🔐 Authentication
 
 User authenticates via POST /api/auth/login → receives JWT token.
