@@ -56,7 +56,7 @@ export const getAllBookings = async (req, res) => {
         const bookings = await Booking.findAll({
             include: [
                 { model: Room },
-                { model: User }
+                { model: User, attributes: ['id', 'email', 'role'] }
             ]
         })
 
